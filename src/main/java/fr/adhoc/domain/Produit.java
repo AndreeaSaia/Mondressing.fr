@@ -14,8 +14,6 @@ public class Produit {
 	private String nomDesigner;
 	private int prix;
 	private String couleur;
-	private Date duréeDébut;
-	private Date duréeFin;
 	private int periodeLocation;
 	
 	public int getId() {
@@ -72,22 +70,6 @@ public class Produit {
 
 	public void setCouleur(String couleur) {
 		this.couleur=couleur;
-	}
-
-	public Data getDuréeDébut() {
-		return duréeDébut;
-	}
-
-	public void setDuréeDébut(Data duréeDébut) {
-		this.duréeDébut=duréeDébut;
-	}
-
-	public Data getDuréeFin() {
-		return duréeFin;
-	}
-
-	public void setDuréeFin(Data duréeFin) {
-		this.duréeFin=duréeFin;
 	}
 
 	public int getPeriodeLocation() {

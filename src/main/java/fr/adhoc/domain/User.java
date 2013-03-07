@@ -1,18 +1,18 @@
 package fr.adhoc.domain;
 
 /**
- * Entity class which contains the information of an User
+ * la class métier User
  * 
  */
 
-@Entity
+
 public class User{
 	
 	private String nom;
 	private String prenom;
 	private String adresse;
 	private String ville;
-	private String codepostale;
+	private int codepostale;
 	private String telephone;
 	private String email;
 	private String motdepasse;
@@ -49,11 +49,11 @@ public class User{
 		this.ville=ville; 
 	}	
 
-	public String getCodePostale(){
+	public int getCodePostale(){
 		return codepostale;
 		}
 
-	public void setCodePostale(String nom){
+	public void setCodePostale(int nom){
 		this.codepostale=codepostale; 
 	}
 

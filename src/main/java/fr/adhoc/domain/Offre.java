@@ -1,10 +1,13 @@
 package fr.adhoc.domain;
 
+import javax.persistence.*;
+
 /**
- * la classe métier Produit
+ * Marking a POJO as a persistent entity by adding @Entity
  * 
  */
 
+@Entity
 public class Offre {
 
 	private String réference;

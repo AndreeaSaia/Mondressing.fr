@@ -1,12 +1,17 @@
 package fr.adhoc.domain;
 
+import javax.persistence.*;
+
 /**
- * la classe métier Produit
+ * Marking a POJO as a persistent entity by adding @Entity
+ * Defining the identifier property of my entity by adding @Id
  * 
  */
 
+@Entity
 public class Produit {
 
+	@Id
 	private int id;
 	private String nomProduit;
 	private int taille;

@@ -1,21 +1,56 @@
 package fr.adhoc.domain;
 
-/**
- * la class métier User
- * 
+import javax.persistence.*;
+
+
+/** Marking a POJO as a persistent entity by adding @Entity
+ * Defining the table for my entity by adding @Table
+ * Defining the identifier property of my entity by adding @Id
+ * Tell JPA to let the databaase automatically generate each primary key for us. 
+ * Add a GeneratedValue annotation to the entityId.
  */
 
-
+@Entity
+@Table(name="T_USER")
 public class User{
-	
+
+	@Id
+	@GeneratedValue
+	@Column(name="IDENTIFIER")
+	private int identifier;
+
+	@Column(name="NOM")
 	private String nom;
+
+	@Column(name="PRENOM")
 	private String prenom;
+
+	@Column(name="ADRESSE")
 	private String adresse;
+
+	@Column(name="VILLE")
 	private String ville;
+
+	@Column(name="CODE_POSTALE")
 	private int codepostale;
+
+	@Column(name="TELEPHONE")
 	private String telephone;
+
+	@Column(name="EMAIL")
 	private String email;
+
+	@Column(name="MOT_DE_PASSE")
 	private String motdepasse;
+
+
+	public int getIdentifier() {
+		return id;
+	}
+
+	public void setIdendifier(int identifier){
+		this.id=id;
+	}
 
 	public String getNom(){
 		return nom;
